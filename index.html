@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen">
+    <!-- Cursor Follower -->
+    <div class="cursor-follower"></div>
+    
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-gray-900 bg-opacity-80 backdrop-blur-md z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold text-purple-400">MyPortfolio</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="nav-link text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium relative">Home</a>
+                        <a href="#about" class="nav-link text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium relative">About</a>
+                        <a href="#projects" class="nav-link text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium relative">Projects</a>
+                        <a href="#skills" class="nav-link text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium relative">Skills</a>
+                        <a href="#contact" class="nav-link text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium relative">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-button p-2 rounded-md text-gray-400 hover:text-white focus:outline-none">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden bg-gray-800">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Home</a>
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">About</a>
+                <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Projects</a>
+                <a href="#skills" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Skills</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <div class="absolute top-1/4 left-1/4 w-32 h-32 rounded-full bg-purple-600 opacity-20 blur-3xl"></div>
+                <div class="absolute bottom-1/4 right-1/4 w-64 h-64 rounded-full bg-blue-600 opacity-20 blur-3xl"></div>
+            </div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10 text-center">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">
+                    <span id="typing-text"></span><span class="typing-cursor">|</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
+                    I create beautiful, functional websites and applications with modern technologies.
+                </p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#projects" class="px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg font-medium hover:from-purple-700 hover:to-blue-700 transition-all duration-300 transform hover:-translate-y-1 shadow-lg">
+                        View My Work
+                    </a>
+                    <a href="#contact" class="px-6 py-3 border border-purple-400 text-purple-400 rounded-lg font-medium hover:bg-purple-900 hover:bg-opacity-30 transition-all duration-300 transform hover:-translate-y-1">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+                <a href="#about" class="text-gray-400 hover:text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">
+                    About Me
+                </h2>
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2">
+                        <div class="bg-gray-700 p-8 rounded-xl shadow-2xl hover:shadow-purple-500/20 transition-all duration-300">
+                            <h3 class="text-2xl font-bold mb-4 text-purple-400">Puput Nur Fadilah</h3>
+                            <p class="text-gray-300 mb-4">
+                                I'm currently pursuing my degree in Information Systems at UPN Veteran Jawa Timur. As a passionate student in the field of technology, 
+                                I’m highly enthusiastic about web development, particularly in building interactive and visually appealing user interfaces.
+                            </p>
+                            <p class="text-gray-300 mb-4">
+                                My journey in programming began when I entered university, and since then, I’ve been actively learning various technologies through coursework and personal projects. 
+                                I enjoy bringing design ideas to life through code and transforming concepts into functional, responsive web applications.
+                            </p>
+                            <p class="text-gray-300">
+                                Outside of academics, I often explore modern front-end tools, experiment with frameworks like React and Tailwind CSS, 
+                                and also dive into backend technologies like PHP and MySQL to strengthen my skills as an aspiring full-stack developer.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-gray-700 p-6 rounded-xl hover:bg-gray-600 transition-all duration-300 transform hover:scale-105">
+                                <div class="text-purple-400 mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                                        <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                                    </svg>
+                                </div>
+                                <h4 class="font-bold text-lg mb-2">Education</h4>
+                                <p class="text-gray-300 text-sm">
+                                    Information Systems Student at UPN Veteran Jawa Timur, currently deepening knowledge in front-end development and full-stack web technologies.
+                                </p>
+                            </div>
+                            <div class="bg-gray-700 p-6 rounded-xl hover:bg-gray-600 transition-all duration-300 transform hover:scale-105">
+                                <div class="text-purple-400 mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                                    </svg>
+                                </div>
+                                <h4 class="font-bold text-lg mb-2">Skills Focus</h4>
+                                <p class="text-gray-300 text-sm">
+                                    Specializing in front-end development, with strong skills in HTML, CSS, JavaScript, and modern frameworks like React and Tailwind CSS. 
+                                    Also building backend capabilities using PHP, MySQL, and Laravel to support full-stack development goals.
+                                </p>
+                            </div>
+                            <div class="bg-gray-700 p-6 rounded-xl hover:bg-gray-600 transition-all duration-300 transform hover:scale-105">
+                                <div class="text-purple-400 mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                                    </svg>
+                                </div>
+                                <h4 class="font-bold text-lg mb-2">Passion</h4>
+                                <p class="text-gray-300 text-sm">
+                                    Enthusiastic about creating efficient, user-friendly web applications and continuously learning new technologies.
+                                </p>
+                            </div>
+                            <div class="bg-gray-700 p-6 rounded-xl hover:bg-gray-600 transition-all duration-300 transform hover:scale-105">
+                                <div class="text-purple-400 mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                                    </svg>
+                                </div>
+                                <h4 class="font-bold text-lg mb-2">Goals</h4>
+                                <p class="text-gray-300 text-sm">
+                                    Aiming to become a full-stack web developer with a strong foundation in front-end technologies. 
+                                    Currently focusing on enhancing skills in UI development and building dynamic user experiences, while also strengthening backend capabilities using PHP and MySQL.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 bg-gray-900">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">
+                    My Latest Projects
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project 1 -->
+                     <div class="card bg-gray-800 rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-purple-500/20">
+                        <div class="h-48 bg-center bg-cover rounded-lg shadow-lg" style="background-image: url('./assets/project-jewelry.png');">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-purple-400">Prestige Jewels</h3>
+                            <p class="text-gray-300 mb-4">
+                                Prestige Jewels is a modern landing page for a luxury jewelry brand. Designed to reflect timeless elegance, the website features a smooth user interface, high-end visual design, and a strong brand identity.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="tag px-3 py-1 bg-gray-700 text-blue-400 rounded-full text-xs font-medium">HTML</span>
+                                <span class="tag px-3 py-1 bg-gray-700 text-green-400 rounded-full text-xs font-medium">Tailwind CSS</span>
+                                <span class="tag px-3 py-1 bg-gray-700 text-yellow-400 rounded-full text-xs font-medium">JavaScript</span>
+                            </div>
+                            <div class="flex space-x-3">
+                                <a href="https://puputnurf283.github.io/prestige-jewels/" target="_blank" class="text-sm text-purple-400 hover:text-purple-300 flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                    </svg>
+                                    Live Demo
+                                </a>
+                                <a href="https://github.com/puputnurf283/prestige-jewels" target="_blank" class="text-sm text-gray-400 hover:text-gray-300 flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                    </svg>
+                                    Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                     <div class="card bg-gray-800 rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-purple-500/20">
+                        <div class="h-48 bg-center bg-cover rounded-lg shadow-lg" style="background-image: url('./assets/project-portfolio.png');">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-purple-400">Personal Portfolio Website</h3>
+                            <p class="text-gray-300 mb-4">
+                                A fully responsive portfolio website showcasing my projects, skills, and contact form. Developed using HTML, Tailwind CSS, and JavaScript. 
+                                Designed to reflect my personal brand and demonstrate my front-end development capabilities.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="tag px-3 py-1 bg-gray-700 text-blue-400 rounded-full text-xs font-medium">HTML</span>
+                                <span class="tag px-3 py-1 bg-gray-700 text-green-400 rounded-full text-xs font-medium">Tailwind CSS</span>
+                                <span class="tag px-3 py-1 bg-gray-700 text-yellow-400 rounded-full text-xs font-medium">JavaScript</span>
+                            </div>
+                            <div class="flex space-x-3">
+                                <a href="#" class="text-sm text-purple-400 hover:text-purple-300 flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                    </svg>
+                                    Live Demo
+                                </a>
+                                <a href="#" class="text-sm text-gray-400 hover:text-gray-300 flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                    </svg>
+                                    Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3 -->
+                     <div class="card bg-gray-800 rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-purple-500/20">
+                        <div class="h-48 bg-center bg-cover rounded-lg shadow-lg" style="background-image: url('./assets/project-sikompit.png');">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-purple-400">Project-Based Mentoring Platform</h3>
+                            <p class="text-gray-300 mb-4">
+                                A web-based collaboration system for IT students, industry partners, and mentors, featuring project management, mentoring schedules, and progress tracking.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="tag px-3 py-1 bg-gray-700 text-blue-400 rounded-full text-xs font-medium">Laravel</span>
+                                <span class="tag px-3 py-1 bg-gray-700 text-green-400 rounded-full text-xs font-medium">React</span>
+                                <span class="tag px-3 py-1 bg-gray-700 text-yellow-400 rounded-full text-xs font-medium">Tailwind</span>
+                            </div>
+                            <div class="flex space-x-3">
+                                <a href="#" class="text-sm text-gray-400 cursor-not-allowed flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                    </svg>
+                                    Live Demo
+                                </a>
+                                <a href="https://github.com/puputnurf283/sikompit-laravel" target="_blank" class="text-sm text-gray-400 hover:text-gray-300 flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                    </svg>
+                                    Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!--Projects 4-->
+                    <div class="card bg-gray-800 rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-purple-500/20">
+                        <div class="h-48 bg-center bg-cover rounded-lg shadow-lg" style="background-image: url('./assets/project-slimway.png');">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-purple-400">Health & Wellness Mobile Application</h3>
+                            <p class="text-gray-300 mb-4">
+                                A mobile app to help users track calories, view healthy recipes, and monitor diet progress. I worked on the UI/UX design and front-end using Android Studio (Java).
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="tag px-3 py-1 bg-gray-700 text-blue-400 rounded-full text-xs font-medium">Android Studio</span>
+                                <span class="tag px-3 py-1 bg-gray-700 text-green-400 rounded-full text-xs font-medium">Java</span>
+                                <span class="tag px-3 py-1 bg-gray-700 text-yellow-400 rounded-full text-xs font-medium">PHP (REST API)</span>
+                                <span class="tag px-3 py-1 bg-gray-700 text-red-400 rounded-full text-xs font-medium">MySQL</span>
+                            </div>
+                            <div class="flex space-x-3">
+                                <a href="#" class="text-sm text-gray-400 cursor-not-allowed flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                    </svg>
+                                    Live Demo
+                                </a>
+                                <a href="#" class="text-sm text-gray-400 hover:text-gray-300 flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                    </svg>
+                                    Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 bg-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">
+                    My Skills & Tools
+                </h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                    <!-- Skill 1 -->
+                    <div class="skill-icon flex flex-col items-center p-4 bg-gray-700 rounded-lg hover:bg-gray-600 transition-all duration-300">
+                        <i class="fab fa-html5 text-4xl text-orange-500 mb-2"></i>
+                        <span class="text-sm font-medium">HTML5</span>
+                    </div>
+                    <!-- Skill 2 -->
+                    <div class="skill-icon flex flex-col items-center p-4 bg-gray-700 rounded-lg hover:bg-gray-600 transition-all duration-300">
+                        <i class="fab fa-css3-alt text-4xl text-blue-500 mb-2"></i>
+                        <span class="text-sm font-medium">CSS3</span>
+                    </div>
+                    <!-- Skill 3 -->
+                    <div class="skill-icon flex flex-col items-center p-4 bg-gray-700 rounded-lg hover:bg-gray-600 transition-all duration-300">
+                        <i class="fab fa-js text-4xl text-yellow-500 mb-2"></i>
+                        <span class="text-sm font-medium">JavaScript</span>
+                    </div>
+                    <!-- Skill 4 -->
+                    <div class="skill-icon flex flex-col items-center p-4 bg-gray-700 rounded-lg hover:bg-gray-600 transition-all duration-300">
+                        <i class="fab fa-react text-4xl text-blue-400 mb-2"></i>
+                        <span class="text-sm font-medium">React</span>
+                    </div>
+                    <!-- Skill 5 -->
+                    <div class="skill-icon flex flex-col items-center p-4 bg-gray-700 rounded-lg hover:bg-gray-600 transition-all duration-300">
+                        <i class="fab fa-laravel text-4xl text-red-500 mb-2"></i>
+                        <span class="text-sm font-medium">Laravel</span>
+                    </div>
+                    <!-- Skill 6 -->
+                    <div class="skill-icon flex flex-col items-center p-4 bg-gray-700 rounded-lg hover:bg-gray-600 transition-all duration-300">
+                        <i class="fab fa-php text-4xl text-purple-500 mb-2"></i>
+                        <span class="text-sm font-medium">PHP</span>
+                    </div>
+                    <!-- Skill 7 -->
+                    <div class="skill-icon flex flex-col items-center p-4 bg-gray-700 rounded-lg hover:bg-gray-600 transition-all duration-300">
+                        <i class="fas fa-database text-4xl text-orange-500 mb-2"></i>
+                        <span class="text-sm font-medium">MySQL</span>
+                    </div>
+                    <!-- Skill 8 -->
+                    <div class="skill-icon flex flex-col items-center p-4 bg-gray-700 rounded-lg hover:bg-gray-600 transition-all duration-300">
+                        <i class="fas fa-server text-4xl text-blue-400 mb-2"></i>
+                        <span class="text-sm font-medium">XAMPP</span>
+                    </div>
+                    <!-- Skill 9 -->
+                    <div class="skill-icon flex flex-col items-center p-4 bg-gray-700 rounded-lg hover:bg-gray-600 transition-all duration-300">
+                        <i class="fab fa-git-alt text-4xl text-orange-600 mb-2"></i>
+                        <span class="text-sm font-medium">Git</span>
+                    </div>
+                    <!-- Skill 10 -->
+                    <div class="skill-icon flex flex-col items-center p-4 bg-gray-700 rounded-lg hover:bg-gray-600 transition-all duration-300">
+                        <i class="fab fa-github text-4xl text-gray-300 mb-2"></i>
+                        <span class="text-sm font-medium">GitHub</span>
+                    </div>
+                    <!-- Skill 11 -->
+                    <div class="skill-icon flex flex-col items-center p-4 bg-gray-700 rounded-lg hover:bg-gray-600 transition-all duration-300">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" alt="VS Code" class="w-10 h-10 mb-2" />
+                        <span class="text-sm font-medium text-white">VS Code</span>
+                    </div>
+                    <!-- Skill 12 -->
+                    <div class="skill-icon flex flex-col items-center p-4 bg-gray-700 rounded-lg hover:bg-gray-600 transition-all duration-300">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg" alt="Figma" class="w-10 h-10 mb-2" />
+                        <span class="text-sm font-medium text-white">Figma</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-gray-900">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">
+                    Get In Touch
+                </h2>
+                <div class="flex flex-col md:flex-row gap-12">
+                    <div class="md:w-1/2">
+                        <div class="bg-gray-800 p-8 rounded-xl shadow-lg">
+                            <h3 class="text-2xl font-bold mb-6 text-purple-400">Contact Me</h3>
+                            <form class="space-y-4">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Name</label>
+                                    <input type="text" id="name" name="name" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 text-white">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email</label>
+                                    <input type="email" id="email" name="email" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 text-white">
+                                </div>
+                                <div>
+                                    <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Message</label>
+                                    <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 text-white"></textarea>
+                                </div>
+                                <button type="submit" class="w-full px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg font-medium hover:from-purple-700 hover:to-blue-700 transition-all duration-300">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2">
+                        <div class="bg-gray-800 p-8 rounded-xl shadow-lg h-full">
+                            <h3 class="text-2xl font-bold mb-6 text-purple-400">Other Ways to Connect</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <div class="text-purple-400 mr-4 mt-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-lg mb-1">Email</h4>
+                                        <p class="text-gray-300">puputnur.fadilah283@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="text-purple-400 mr-4 mt-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-lg mb-1">Phone</h4>
+                                        <p class="text-gray-300">+62 812-3245-9087</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="text-purple-400 mr-4 mt-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-lg mb-1">Location</h4>
+                                        <p class="text-gray-300">Surabaya, Indonesia</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-8">
+                                <h4 class="font-bold text-lg mb-4 text-purple-400">Follow Me</h4>
+                                <div class="flex space-x-4">
+                                    <a href="https://github.com/puputnurf283" target="_blank" class="social-icon w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-gray-300 hover:bg-purple-600 hover:text-white transition-all duration-300">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://linkedin.com/in/puputnurfadilah283" target="_blank" class="social-icon w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-gray-300 hover:bg-blue-500 hover:text-white transition-all duration-300">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="#" class="social-icon w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-gray-300 hover:bg-blue-400 hover:text-white transition-all duration-300">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="#" class="social-icon w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-gray-300 hover:bg-pink-500 hover:text-white transition-all duration-300">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <span class="text-xl font-bold text-purple-400">MyPortfolio</span>
+                </div>
+                <div class="text-gray-400 text-sm">
+                    &copy; 2025 MyPortfolio. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
