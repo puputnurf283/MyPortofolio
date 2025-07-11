@@ -29,13 +29,26 @@
     box-shadow: 0 0 10px currentColor;
 }
 
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delay {
+    animation: float 6s ease-in-out infinite 1s;
+}
+
 @keyframes float {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+.tech-badge {
+    transition: all 0.3s ease;
+}
+
+.tech-badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .floating {
@@ -80,7 +93,7 @@
     transition: max-height 0.3s ease-out;
 }
 
-.mobile-menu.active {
+.mobile-menu:not(.hidden) {
     max-height: 500px;
     transition: max-height 0.5s ease-in;
 }

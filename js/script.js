@@ -22,32 +22,43 @@ document.addEventListener('DOMContentLoaded', function() {
     // Mobile menu toggle
     const mobileMenuButton = document.querySelector('.mobile-menu-button');
     const mobileMenu = document.querySelector('.mobile-menu');
-    
-    mobileMenuButton.addEventListener('click', () => {
-        mobileMenu.classList.toggle('active');
-    });
+    const mobileMenuLinks = document.querySelectorAll('.mobile-menu a');
 
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            // Close mobile menu if open
-            if (mobileMenu.classList.contains('active')) {
-                mobileMenu.classList.remove('active');
-            }
-            
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-            
-            if (targetElement) {
-                window.scrollTo({
-                    top: targetElement.offsetTop - 80,
-                    behavior: 'smooth'
-                });
+    if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleMobileMenu();
+        });
+        
+        // Tutup menu ketika mengklik di luar
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.contains(e.target) && !mobileMenuButton.contains(e.target)) {
+                closeMobileMenu();
             }
         });
-    });
+
+        // Tambahkan event listener untuk semua link di mobile menu
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                closeMobileMenu();
+            });
+        });
+    }
+
+    function toggleMobileMenu() {
+        mobileMenu.classList.toggle('hidden');
+        
+        if (mobileMenu.classList.contains('hidden')) {
+            mobileMenu.style.maxHeight = '0';
+        } else {
+            mobileMenu.style.maxHeight = mobileMenu.scrollHeight + 'px';
+        }
+    }
+
+    function closeMobileMenu() {
+        mobileMenu.classList.add('hidden');
+        mobileMenu.style.maxHeight = '0';
+    }
 
     // Scroll animation
     const animateOnScroll = () => {

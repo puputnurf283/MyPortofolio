@@ -83,78 +83,133 @@
         </section>
 
         <!-- About Section -->
-        <section id="about" class="py-20 bg-gray-800">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">
-                    About Me
-                </h2>
-                <div class="flex flex-col md:flex-row items-center gap-12">
-                    <div class="md:w-1/2">
-                        <div class="bg-gray-700 p-8 rounded-xl shadow-2xl hover:shadow-purple-500/20 transition-all duration-300">
-                            <h3 class="text-2xl font-bold mb-4 text-purple-400">Puput Nur Fadilah</h3>
-                            <p class="text-gray-300 mb-4">
-                                I'm currently pursuing my degree in Information Systems at UPN Veteran Jawa Timur. As a passionate student in the field of technology, 
-                                I’m highly enthusiastic about web development, particularly in building interactive and visually appealing user interfaces.
-                            </p>
-                            <p class="text-gray-300 mb-4">
-                                My journey in programming began when I entered university, and since then, I’ve been actively learning various technologies through coursework and personal projects. 
-                                I enjoy bringing design ideas to life through code and transforming concepts into functional, responsive web applications.
-                            </p>
-                            <p class="text-gray-300">
-                                Outside of academics, I often explore modern front-end tools, experiment with frameworks like React and Tailwind CSS, 
-                                and also dive into backend technologies like PHP and MySQL to strengthen my skills as an aspiring full-stack developer.
-                            </p>
+        <section id="about" class="py-20 bg-gray-900 relative overflow-hidden">
+            <!-- Background elements -->
+            <div class="absolute inset-0 z-0 opacity-10">
+                <div class="absolute top-20 left-20 w-64 h-64 rounded-full bg-purple-600 filter blur-3xl animate-float"></div>
+                <div class="absolute bottom-20 right-20 w-64 h-64 rounded-full bg-blue-600 filter blur-3xl animate-float-delay"></div>
+            </div>
+
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">
+                        Front-end Specialist
+                    </h2>
+                    <p class="text-lg text-gray-400 max-w-2xl mx-auto">Crafting beautiful, responsive, and interactive web experiences</p>
+                </div>
+
+                <div class="flex flex-col lg:flex-row gap-12 items-start">
+                    <!-- Profile Focus -->
+                    <div class="lg:w-2/5 w-full">
+                        <div class="bg-gray-800 rounded-2xl p-8 shadow-xl border border-gray-700 hover:border-purple-500 transition-all duration-300">
+                            <div class="flex flex-col items-center text-center">
+                                <div class="relative mb-6 group">
+                                    <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-purple-600 to-blue-600 opacity-75 blur group-hover:opacity-100 transition duration-500"></div>
+                                    <img src="assets/aboutme1.png" alt="Profile" class="relative w-40 h-40 rounded-full object-cover border-4 border-gray-800 z-10">
+                                </div>
+                                <h3 class="text-2xl font-bold text-white mb-2">Puput Nur Fadilah</h3>
+                                <p class="text-purple-400 mb-4 font-medium">Front-end Developer</p>
+                                <p class="text-gray-300 mb-6">
+                                    Transforming designs into pixel-perfect, responsive websites with modern technologies.
+                                </p>
+                                <div class="w-full bg-gray-700 h-px my-4"></div>
+                                <div class="flex justify-center space-x-4">
+                                    <a href="https://github.com/puputnurf283" target="_blank"class="text-gray-400 hover:text-purple-400 transition-colors">
+                                        <i class="fab fa-github text-xl"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/puputnurfadilah283/" target="_blank"class="text-gray-400 hover:text-blue-400 transition-colors">
+                                        <i class="fab fa-linkedin-in text-xl"></i>
+                                    </a>
+                                    <a href="#" class="text-gray-400 hover:text-pink-400 transition-colors">
+                                        <i class="fab fa-instagram text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="md:w-1/2">
-                        <div class="grid grid-cols-2 gap-4">
-                            <div class="bg-gray-700 p-6 rounded-xl hover:bg-gray-600 transition-all duration-300 transform hover:scale-105">
-                                <div class="text-purple-400 mb-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path d="M12 14l9-5-9-5-9 5 9 5z" />
-                                        <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
-                                    </svg>
-                                </div>
-                                <h4 class="font-bold text-lg mb-2">Education</h4>
-                                <p class="text-gray-300 text-sm">
-                                    Information Systems Student at UPN Veteran Jawa Timur, currently deepening knowledge in front-end development and full-stack web technologies.
+
+                    <!-- Front-end Focus Content -->
+                    <div class="lg:w-3/5 w-full">
+                        <div class="bg-gray-800 rounded-2xl p-8 shadow-xl border border-gray-700">
+                            <h3 class="text-2xl font-bold text-white mb-6 flex items-center">
+                                <span class="w-3 h-3 bg-purple-500 rounded-full mr-3 animate-pulse"></span>
+                                My Front-end Expertise
+                            </h3>
+                            
+                            <div class="mb-8">
+                                <p class="text-gray-300 mb-6 leading-relaxed">
+                                    As a passionate front-end developer, I specialize in creating engaging user interfaces with clean, efficient code. My approach combines aesthetic design with technical precision to deliver seamless web experiences.
                                 </p>
+                                
+                                <div class="grid grid-cols-2 gap-4 mb-8">
+                                    <div class="flex items-center">
+                                        <div class="text-purple-400 mr-3">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <span class="text-gray-300">Responsive Design</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <div class="text-purple-400 mr-3">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <span class="text-gray-300">UI/UX Principles</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <div class="text-purple-400 mr-3">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <span class="text-gray-300">Cross-browser Compatibility</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <div class="text-purple-400 mr-3">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <span class="text-gray-300">Performance Optimization</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="bg-gray-700 p-6 rounded-xl hover:bg-gray-600 transition-all duration-300 transform hover:scale-105">
-                                <div class="text-purple-400 mb-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                                    </svg>
-                                </div>
-                                <h4 class="font-bold text-lg mb-2">Skills Focus</h4>
-                                <p class="text-gray-300 text-sm">
-                                    Specializing in front-end development, with strong skills in HTML, CSS, JavaScript, and modern frameworks like React and Tailwind CSS. 
-                                    Also building backend capabilities using PHP, MySQL, and Laravel to support full-stack development goals.
-                                </p>
+
+                            <!-- Tech Stack -->
+                            <h4 class="text-xl font-bold text-white mb-4">Core Technologies</h4>
+                            <div class="flex flex-wrap gap-3 mb-8">
+                                <span class="tech-badge px-4 py-2 bg-gray-700 rounded-full text-purple-400 border border-purple-400/30">HTML5</span>
+                                <span class="tech-badge px-4 py-2 bg-gray-700 rounded-full text-blue-400 border border-blue-400/30">CSS3</span>
+                                <span class="tech-badge px-4 py-2 bg-gray-700 rounded-full text-yellow-400 border border-yellow-400/30">JavaScript</span>
+                                <span class="tech-badge px-4 py-2 bg-gray-700 rounded-full text-blue-300 border border-blue-300/30">React</span>
+                                <span class="tech-badge px-4 py-2 bg-gray-700 rounded-full text-cyan-400 border border-cyan-400/30">Tailwind CSS</span>
+                                <span class="tech-badge px-4 py-2 bg-gray-700 rounded-full text-green-400 border border-green-400/30">Git</span>
                             </div>
-                            <div class="bg-gray-700 p-6 rounded-xl hover:bg-gray-600 transition-all duration-300 transform hover:scale-105">
-                                <div class="text-purple-400 mb-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                                    </svg>
+
+                            <!-- Approach -->
+                            <h4 class="text-xl font-bold text-white mb-4">Development Approach</h4>
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <div class="text-purple-400 mt-1 mr-4">
+                                        <i class="fas fa-mobile-alt"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-semibold text-gray-200 mb-1">Mobile-First</h5>
+                                        <p class="text-gray-400 text-sm">Prioritizing mobile experience with progressive enhancement for larger screens</p>
+                                    </div>
                                 </div>
-                                <h4 class="font-bold text-lg mb-2">Passion</h4>
-                                <p class="text-gray-300 text-sm">
-                                    Enthusiastic about creating efficient, user-friendly web applications and continuously learning new technologies.
-                                </p>
-                            </div>
-                            <div class="bg-gray-700 p-6 rounded-xl hover:bg-gray-600 transition-all duration-300 transform hover:scale-105">
-                                <div class="text-purple-400 mb-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                                    </svg>
+                                <div class="flex items-start">
+                                    <div class="text-blue-400 mt-1 mr-4">
+                                        <i class="fas fa-tachometer-alt"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-semibold text-gray-200 mb-1">Performance</h5>
+                                        <p class="text-gray-400 text-sm">Optimized assets and efficient code for faster loading</p>
+                                    </div>
                                 </div>
-                                <h4 class="font-bold text-lg mb-2">Goals</h4>
-                                <p class="text-gray-300 text-sm">
-                                    Aiming to become a full-stack web developer with a strong foundation in front-end technologies. 
-                                    Currently focusing on enhancing skills in UI development and building dynamic user experiences, while also strengthening backend capabilities using PHP and MySQL.
-                                </p>
+                                <div class="flex items-start">
+                                    <div class="text-green-400 mt-1 mr-4">
+                                        <i class="fas fa-code"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-semibold text-gray-200 mb-1">Clean Code</h5>
+                                        <p class="text-gray-400 text-sm">Modular, maintainable code with best practices</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -307,7 +362,7 @@
                                     </svg>
                                     Live Demo
                                 </a>
-                                <a href="https://github.com/puputnurf283/sikompit-laravel" target="_blank" class="text-sm text-gray-400 hover:text-gray-300 flex items-center">
+                                <a href="#" class="text-sm text-gray-400 hover:text-gray-300 flex items-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                                     </svg>
